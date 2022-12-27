@@ -24,13 +24,13 @@ namespace CrewMonitor
             this.taskLoaderService = new TaskLoaderService();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
             var s = this.taskLoaderService.GetMe();
             this.lblName.Text = s.Name;
             keyboardHook.KeyUp += new KeyboardHook.KeyboardHookCallback(keyboardHook_KeyUp);
             keyboardHook.Install();
-            this.populateItem();
+            await this.populateItem();
         }
         private void keyboardHook_KeyUp(KeyboardHook.VKeys key)
         {

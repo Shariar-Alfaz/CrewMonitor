@@ -14,7 +14,11 @@ namespace CrewMonitor.Services
     {
         private HttpClient _httpClient;
         private HttpRequestMessage request;
-
+        public TaskLoaderService()
+        {
+            this._httpClient= new HttpClient();
+            this.request = new HttpRequestMessage();    
+        }
         public Student GetMe()
         {
             string json = File.ReadAllText("D:\\Monitor\\me.json");
