@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrewMonitor", "CrewMonitor\CrewMonitor.csproj", "{02677C4C-9C3E-43C7-96F3-E962D42DE0B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02677C4C-9C3E-43C7-96F3-E962D42DE0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02677C4C-9C3E-43C7-96F3-E962D42DE0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02677C4C-9C3E-43C7-96F3-E962D42DE0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02677C4C-9C3E-43C7-96F3-E962D42DE0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D29DA950-AA63-40E6-BC72-88E46D21042C}
+	EndGlobalSection
+EndGlobal
