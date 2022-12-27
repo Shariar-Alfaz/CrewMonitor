@@ -1,4 +1,5 @@
-﻿using CrewMonitor.Services;
+﻿using CrewMonitor.Entity;
+using CrewMonitor.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,7 @@ namespace CrewMonitor
             this.lblName.Text = s.Name;
             keyboardHook.KeyUp += new KeyboardHook.KeyboardHookCallback(keyboardHook_KeyUp);
             keyboardHook.Install();
+            this.populateItem();
         }
         private void keyboardHook_KeyUp(KeyboardHook.VKeys key)
         {
@@ -37,6 +39,32 @@ namespace CrewMonitor
         private void keyboardHook_KeyDown(KeyboardHook.VKeys key)
         {
            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+
+
+        public async Task populateItem()
+        {
+            var taskDatas = await this.taskLoaderService.LoadTask();
+            var control = new TaskData[taskDatas.Count];
+            for (int i = 0;i < control.Length;i++) 
+            {
+                control[i] = new TaskData();
+                control[i].TaskName = taskDatas[i].Name;
+                control[i].Description = taskDatas[i].Description;
+
+                if(flowLayoutPanel1.Controls.Count < 0)
+                {
+                    flowLayoutPanel1.Controls.Clear();
+                }
+                else
+                    flowLayoutPanel1.Controls.Add(control[i]);
+            }
+
         }
     }
 }

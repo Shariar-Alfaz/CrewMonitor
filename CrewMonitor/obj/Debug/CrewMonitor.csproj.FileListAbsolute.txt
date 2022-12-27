@@ -18,3 +18,23 @@ D:\Thesis\Project\New folder\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.cspro
 D:\Thesis\Project\New folder\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.exe
 D:\Thesis\Project\New folder\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.pdb
 D:\Thesis\Project\New folder\CrewMonitor\CrewMonitor\bin\Debug\CrewMonitor.pdb
+D:\Thesis\CrewMonitor\CrewMonitor\bin\Debug\CrewMonitor.exe.config
+D:\Thesis\CrewMonitor\CrewMonitor\bin\Debug\CrewMonitor.exe
+D:\Thesis\CrewMonitor\CrewMonitor\bin\Debug\CrewMonitor.pdb
+D:\Thesis\CrewMonitor\CrewMonitor\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\Thesis\CrewMonitor\CrewMonitor\bin\Debug\Newtonsoft.Json.dll
+D:\Thesis\CrewMonitor\CrewMonitor\bin\Debug\Newtonsoft.Json.pdb
+D:\Thesis\CrewMonitor\CrewMonitor\bin\Debug\Newtonsoft.Json.xml
+D:\Thesis\CrewMonitor\CrewMonitor\bin\Debug\Newtonsoft.Json.Bson.pdb
+D:\Thesis\CrewMonitor\CrewMonitor\bin\Debug\Newtonsoft.Json.Bson.xml
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.csproj.AssemblyReference.cache
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.csproj.SuggestedBindingRedirects.cache
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.Entity.TaskData.resources
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.Form1.resources
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.Login.resources
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.Properties.Resources.resources
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.csproj.GenerateResource.cache
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.csproj.CoreCompileInputs.cache
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.csproj.CopyComplete
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.exe
+D:\Thesis\CrewMonitor\CrewMonitor\obj\Debug\CrewMonitor.pdb

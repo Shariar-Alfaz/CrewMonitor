@@ -18,7 +18,7 @@ namespace CrewMonitor
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             LoginService login = new LoginService();
-            if(login.GetMe() != null)
+            if (login.GetMe() != null)
             {
                 Application.Run(new Form1());
             }
