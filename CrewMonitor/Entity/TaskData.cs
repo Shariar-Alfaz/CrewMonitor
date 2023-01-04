@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -20,10 +22,12 @@ namespace CrewMonitor.Entity
         private Thread monitor;
         private DelegateService.HideForm hideForm { get; set; }
         private KeyboardHook keyboardHook;
+        private TaskLoaderService service;
 
         private TaskData()
         {
             InitializeComponent();
+            this.service = new TaskLoaderService();
             btnStop.Hide();
         }
 
@@ -89,9 +93,19 @@ namespace CrewMonitor.Entity
         {
             while(start)
             {
-                Thread.Sleep(200);
+                Thread.Sleep(5000);
                 //Todo screenShoot code here
-                //Todo screenShoot upload code here
+                var capture = new Bitmap(Screen.PrimaryScreen.Bounds.Width,Screen.PrimaryScreen.Bounds.Height, PixelFormat.Format32bppArgb);
+                Rectangle captuRectangle = Screen.AllScreens[0].Bounds;
+                Graphics captureGraphics = Graphics.FromImage(capture);
+                captureGraphics.CopyFromScreen(captuRectangle.Left, captuRectangle.Top, 0, 0, captuRectangle.Size);
+                var getCurrentDir = Directory.GetCurrentDirectory();
+                capture.Save(@"D:\monitor\img\img.jpg", ImageFormat.Jpeg);
+                var file = new FileStream( @"D:\monitor\img\img.jpg", FileMode.Open);
+                //Todo screenShoot 
+                await this.service.UploadTask(file,this.Id,this.count);
+                this.count = 0;
+                file.Close();
             }
         }
 

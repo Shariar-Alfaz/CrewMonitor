@@ -46,6 +46,7 @@ namespace CrewMonitor
             for (int i = 0;i < control.Length;i++) 
             {
                 control[i] = new TaskData(hideForm);
+                control[i].Id= taskDatas[i].Id;
                 control[i].TaskName = taskDatas[i].Name;
                 control[i].Description = taskDatas[i].Description;
 

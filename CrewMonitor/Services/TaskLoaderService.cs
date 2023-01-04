@@ -44,5 +44,21 @@ namespace CrewMonitor.Services
             }
             return null;
         }
+
+        public async Task UploadTask(FileStream file,int taskId,int keyPress)
+        {
+            var student = GetMe();
+            var multipartContent = new MultipartFormDataContent();
+            using (var mem = new MemoryStream())
+            {
+                await file.CopyToAsync(mem);
+                var byteContent = new ByteArrayContent(mem.ToArray());
+                multipartContent.Add(byteContent,"files","myFiles");
+                multipartContent.Add(new StringContent(student.Id.ToString()), "studentId");
+                multipartContent.Add(new StringContent(taskId.ToString()), "taskId");
+                multipartContent.Add(new StringContent(keyPress.ToString()), "keyPress");
+                var response = await _httpClient.PostAsync("https://localhost:7022/Monitor/api/Save/Monitor", multipartContent);
+            }
+        }
     }
 }
